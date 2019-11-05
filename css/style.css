@@ -1,5 +1,4 @@
 html{
-
     background-image: "url(Annotation 2019-10-16 100415)";
     background-repeat: space;
 }
@@ -86,13 +85,11 @@ a{
         font-size: 6vh;
         font-family: 'Amatic SC', cursive;
     }
-  }
-
+}
 .home-book{
     height: 10vh;
     width: 6vw;
 }
-
 .grid-main{
     height:87vh;
     width: 90vw;
