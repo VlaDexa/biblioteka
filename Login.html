@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-    <title>OOK</title>
+    <script defer src="login.js"></script>
+    <title>Библиотека</title>
 </head>
 
 <body>
@@ -17,41 +18,55 @@
             <p class="Header" align='center'>Библиотека школы 1420</p>
         </div>
         <div class="item grid-right grid-edge grid-first haeder">
-            Книги недавно поступившие в библиотеку:
         </div>
-        <div class="item grid-left grid-edge ader">
-            <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.spreadshirtmedia.net%2Fimage-server%2Fv1%2Fcompositions%2F22833025%2Fviews%2F1%2Cwidth%3D300%2Cheight%3D300%2Cversion%3D1478003241%2Fhier-koennte-ihre-werbung-stehen-russland-maenner-shirt-schwarz-maenner-t-shirt.jpg&f=1&nofb=1"
-                class="ad" width="0.8fr" height="0.8fr">
-            <h4>Да-да</h4>
-            Она самая
+        <div class="item grid-left grid-edge">
         </div>
-        <div class="item grid-centre grid-second">
-            <form id="form">
-                <p class='login1'><b>Ваше имя:</b><br>
-                    <input placeholder="Иван" type="text" class="login-input" width="20vw">
-                </p>
-                <p class='login2'><b>Ваша фамилия:</b><br>
-                    <input placeholder="Иванович" type="text" class="login-input" width="20vw">
-                </p>
-                <p class='login2'><b>Книга которую хотите прочитать:</b><br>
-                    <input placeholder="Колобок" type="text" class="login-input" width="40vw"><br><br>
-                    <a href="home.html"><input type="submit" class="otpravit"></a>
-                </p>
-            </form>
+        <div class="item grid-centre grid-second action">
+            <div class="sub-container">
+                <form id="form" name="form" action="home.html">
+                    <div class="former-first">
+                        <label for="name">Имя</label><br>
+                        <input id="name" type="text" name="name" maxlength="20" pattern="^[А-ЯA-Z]{1}[а-яa-z]*$"
+                            required><br>
+                    </div>
+                    <div class="former">
+                        <label for="secondname">Фамилия</label><br>
+                        <input id="secondname" type="text" name="secondname" maxlength="20"
+                            pattern="^[А-ЯA-Z]{1}[а-яa-z]*$" required><br>
+                    </div>
+                    <div class="former">
+                        <label for="fathername">Отчество</label><br>
+                        <input id="fathername" type="text" name="fathername" maxlength="20"
+                            pattern="^[А-ЯA-Z]{1}[а-яa-z]*$"><br>
+                    </div>
+                    <div class="former">
+                        <label for="email">email</label><br>
+                        <input id="email" type="email" name="email" maxlength="300" pattern="^.+@.+\..+$" required><br>
+                    </div>
+                    <div class="former">
+                        <label for="password">Пароль</label><br>
+                        <input id="password" type="password" name="password" minlength="10" maxlength="300"
+                            pattern="^(?=.*[0-9])(?=.*[a-zа-я])(?=.*[A-ZА-Я])([a-zа-яA-ZА-Я0-9]){3,}\S{0,}$" required>
+                    </div>
+                    <div class="former">
+                        <label for="date">День рождения</label><br>
+                        <input id="date" min="1900-01-01" max="2015-01-01" type="date" name="date"><br>
+                    </div>
+                    <div class="former">
+                        <label for="gender">Пол</label><br>
+                        <select name="gender" id="gender">
+                            <option disabled>Выберите пол</option>
+                            <option value="male">Мужчина</option>
+                            <option value="female">Женщина</option>
+                        </select><br>
+                    </div>
+                    <div class="former">
+                        <input type="submit" value="Зарегестрироваться">
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="item grid-right grid-edge booker">
-            <img class="img-book"
-                src='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fozon-st.cdn.ngenix.net%2Fmultimedia%2F1003151679.jpg&f=1&nofb=1'><br>
-            26 Сентября 2019
-            <p class="len"> </p>
-            <img class="img-book"
-                src='https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.eksmo.ru%2Fv2%2FAST000000000019273%2FCOVER%2Fcover3d1__w600.jpg&f=1&nofb=1'><br>
-            26 Сентября 2019
-            <p class="len"> </p>
-            <img class="img-book"
-                src='https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbookz.ru%2Fpics%2Fkolobok_722.jpg&f=1&nofb=1'><br>
-            26 Сентября 2019
-            <p class="len"> </p>
         </div>
     </div>
 </body>

@@ -51,13 +51,10 @@ p.Header {
     justify-content: center;
     text-align: center;
     padding-top: 10vh;
-    font-size: 4vh;
 }
 .login2{
     justify-content: center;
     text-align: center;
-    margin-top: 1vh;
-    font-size: 4vh;
 }
 a{
     color: #000 !important;
@@ -78,20 +75,14 @@ a{
 .homer{
     justify-content: center;
     text-align: center;
-    font-size: 2vh
-}
-@media only screen and (max-width: 415px) {
-    p.Header {
-        font-size: 6vh;
-        font-family: 'Amatic SC', cursive;
-    }
+    font-size: 2vw;
 }
 .home-book{
     height: 10vh;
     width: 6vw;
 }
 .grid-main{
-    height:87vh;
+    height:86vh;
     width: 90vw;
     padding-left: 3vw;
 }
@@ -112,26 +103,23 @@ a{
     margin-left: 11vw;
     margin-right: 1vw;
     border:1px solid SaddleBrown;
-    font-size:4vh;
+    font-size:3vw;
 }
 .img-news{
-    width: 15vw;
-    height: 15vh;
+    width: 310px;
+    height: 190px;
     box-shadow: 3px 4px 14px 0px black;
 }
 .img-book{
-    width: 7vw;
-    height: 20vh;
+    width: 140px;
+    height: 260px;
     box-shadow: 3px 4px 14px 0px black;
 }
-.login-input{
-    width: 40vw;
-    height: 10vh;
-    margin: 5vh 20vw;
-    font-size:3vh;
-}
-.otpravit{
-    padding: 2.5vh 10vw
+input, select{
+    width: 400px;
+    height: 30px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset;
+    border-radius: 10px;
 }
 .ad{
     width:80%;
@@ -153,4 +141,30 @@ a{
     padding-top: 3vh;
     padding-left:0.5vw;
     padding-bottom: 3vh;
+}
+.sub-container{
+    text-align: center;
+    justify-content: center;
+}
+.former{
+    padding-top:3vh ;
+}
+.former-first{
+    padding-top:10vh
+}
+.action{
+    z-index: 1000;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@media only screen and (max-width: 525px) {
+    p.Header {
+        font-size: 6vh;
+        font-family: 'Amatic SC', cursive;
+    }
+    input, select{
+        width: 300px;
+        height: 20px;
+}
+vailgn{
+    vertical-align: top;
 }
