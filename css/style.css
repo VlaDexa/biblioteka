@@ -59,11 +59,11 @@ a{
 .main-container{
     display:grid;
     grid-template-columns: 7% 93%;
-    overflow: hidden;
+    overflow:hidden;
 }
 .home-container{
     display:grid;
-    grid-template-rows: 100%;
+    grid-template-rows: 90%;
     grid-template-columns: 100%;
     border-bottom:0.15vh solid SaddleBrown;
     z-index:1
@@ -81,6 +81,7 @@ a{
     height:88.4vh;
     width: 90vw;
     padding-left: 3vw;
+    overflow-y: auto;
 }
 .news{
     padding-left: 5vw;
