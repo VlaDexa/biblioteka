@@ -1,3 +1,10 @@
-for (let num = 0; num < 1; num++) {
-document.getElementById("number").innerHTML = ("В наличии")+Math.floor(Math.random() * 10);
+window.onload = function () {
+    if (localStorage.getItem("data")) {
+        let object = JSON.parse(localStorage.getItem("data"));
+        let arr = ["name", "secondname"];
+        arr.forEach(element => {
+            if (document.getElementById(element))
+                document.getElementById(element).value = object[element];
+        });
+    }
 }
